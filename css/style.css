@@ -1,3 +1,16 @@
+@font-face {
+	font-family: "Bebas Neue Regular";
+	src: url("../fonts/bebas-neue-regular/bebas-neue-regular.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/bebas-neue-regular/bebas-neue-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/bebas-neue-regular/bebas-neue-regular.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/bebas-neue-regular/bebas-neue-regular.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/bebas-neue-regular/bebas-neue-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/bebas-neue-regular/bebas-neue-regular.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/bebas-neue-regular/bebas-neue-regular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -55,6 +68,83 @@ body {
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 58px;
+    display: flex;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main-title {
+    font-family: "Bebas Neue Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+
+.home-image path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover {
+    opacity: 1;
+}
+
+.counter {
+    font-family: "Bebas Neue Regular";
+    font-size: 124px;
+    color: #635854;
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-button {
+    background-color: #fff;
+    border: none;
+}
+
+.counter-arrow-up {
+    transform: rotate(180deg);
+}
+
+.button-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 36px;
+    width: 297px;
+    height: 51px;
+    background-color: #3596F5;
+    border-radius: 6px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
 }
