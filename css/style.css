@@ -108,6 +108,10 @@ body {
     opacity: 1;
 }
 
+path.current-floor {
+    opacity: 1;
+}
+
 .counter {
     font-family: "Bebas Neue Regular";
     font-size: 124px;
@@ -123,6 +127,7 @@ body {
 .counter-button {
     background-color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 .counter-arrow-up {
@@ -148,3 +153,4 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
+
