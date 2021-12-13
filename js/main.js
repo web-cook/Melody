@@ -4,8 +4,14 @@ $(document).ready(function () {
     let counterUp = $('.counter-up');
     let counterDown = $('.counter-down');
     let usCurrentFloor = '';
-    console.log("ready");
+    let modal = $('.modal');
+    let modalClose = $('.modal-close-button');
+    let viewFlatsButton = $('.view-flats');
 
+    floorPath.on('click', toggleModal);
+    modalClose.on('click', toggleModal);
+    viewFlatsButton.on('click', toggleModal);
+   
     floorPath.on('mouseover', function () {
         floorPath.removeClass('current-floor');
         currentFloor = $(this).attr('data-floor');
@@ -19,7 +25,6 @@ $(document).ready(function () {
             $('.counter').text(usCurrentFloor);
             floorPath.removeClass('current-floor');
             $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
-            console.log(usCurrentFloor);
         }
     });
 
@@ -30,7 +35,10 @@ $(document).ready(function () {
             $('.counter').text(usCurrentFloor);
             floorPath.removeClass('current-floor');
             $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
-            console.log(usCurrentFloor);
         }
     });
+
+    function toggleModal() {
+        modal.toggleClass('is-open');
+    }
 })
