@@ -213,7 +213,7 @@ path.current-floor {
     cursor: pointer;
 }
 
-.flats path:hover {
+.flats path:hover, .flats path.flats-jhover {
     opacity: 1;
 }
 
@@ -249,7 +249,7 @@ path.current-floor {
     text-decoration: none;
 }
 
-.flat-link:hover {
+.flat-link:hover, .flat-link-jhover {
     text-decoration: underline;
     color: #3596F5;
 }
