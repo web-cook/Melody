@@ -15,8 +15,19 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
 body {
     font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: auto;
 }
 
 .header {
@@ -26,8 +37,6 @@ body {
 }
 
 .navbar {
-    max-width: 1280px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,8 +82,6 @@ body {
 }
 
 .main {
-    max-width: 1280px;
-    margin: auto;
     padding-top: 58px;
     display: flex;
 }
@@ -86,6 +93,7 @@ body {
     align-items: center;
     flex-grow: 1;
     text-align: center;
+    padding: 0 10px;
 }
 
 .main-title {
@@ -272,3 +280,94 @@ path.current-floor {
     background-color: #fff;
 }
 
+/*--------FOOTER--------------------------*/
+
+.footer {
+    height: 171px;
+    margin-top: 99px;
+    background-color: #D7D7D7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts {
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #635854;
+    margin-bottom: 5px;
+}
+
+.footer__phone {
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #635854;
+}
+
+.footer__social {
+    margin-left: 59px;
+    font-size: 20px;
+}
+
+.footer__social a {
+    color: #635854;
+}
+
+.footer__social a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+}
+
+.footer__right a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    text-decoration: underline;
+    color: #635854;
+}
+
+.footer__right a:not(:last-child) {
+    margin-right: 20px;
+}
+
+/*--------MEDIA---------------------------*/
+
+@media (max-width: 1080px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-item {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    /*сделать бургер-меню*/
+}
