@@ -366,8 +366,9 @@ path.current-floor {
     .navbar-item {
         margin: 0 20px;
     }
-}
 
-@media (max-width: 890px) {
-    /*сделать бургер-меню*/
+    .footer-social {
+        display: flex;
+        margin: 0 20px;
+    }
 }
